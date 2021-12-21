@@ -24,7 +24,7 @@ export default function Solo(props) {
           <div className='add-points'>
             <input type="number" placeholder="0" value={addTeam1} onChange={(e) => setAddTeam1(e.target.value)} />
             <button onClick={() => {
-              if (isNaN(parseInt(addTeam1))) {
+              if (!isNaN(parseInt(addTeam1))) {
                 setScoreTeam1(parseInt(scoreTeam1) + parseInt(addTeam1))
                 setHistoryTeam1([...historyTeam1, parseInt(addTeam1)])
               }
@@ -43,7 +43,7 @@ export default function Solo(props) {
           <div className='add-points'>
             <input type="number" placeholder="0" value={addTeam2} onChange={(e) => setAddTeam2(e.target.value)} />
             <button onClick={() => {
-              if (isNaN(parseInt(addTeam2))) {
+              if (!isNaN(parseInt(addTeam2))) {
                 setScoreTeam2(parseInt(scoreTeam2) + parseInt(addTeam2))
                 setHistoryTeam2([...historyTeam2, parseInt(addTeam2)])
               }
@@ -62,7 +62,7 @@ export default function Solo(props) {
           <div className='add-points'>
             <input type="number" placeholder="0" value={addTeam3} onChange={(e) => setAddTeam3(e.target.value)} />
             <button onClick={() => {
-              if (isNaN(parseInt(addTeam3))) {
+              if (!isNaN(parseInt(addTeam3))) {
                 setScoreTeam3(parseInt(scoreTeam3) + parseInt(addTeam3))
                 setHistoryTeam3([...historyTeam3, parseInt(addTeam3)])
               }
