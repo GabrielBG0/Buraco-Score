@@ -49,7 +49,7 @@ function App() {
           <h2>Quantidade de Equipes</h2>
           <div>
             <TeamsModal onClick={() => updateGameMode('teams')} setTeamInfo={setTeamInfo}>2</TeamsModal>
-            {/* Solo desativado enquanto estiver me desenvolvimento */}
+            {/* Solo desativado enquanto estiver em desenvolvimento */}
             <SoloModal onClick={() => updateGameMode('')} setSoloInfo={setSoloInfo}>3</SoloModal>
           </div>
         </div>}
