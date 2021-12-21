@@ -31,7 +31,7 @@ export default function Solo(props) {
           </div>
           {historyTeam1.map((item, index) => {
             return (
-              <p key={index}>{index + 1}ª Rodada: {item}</p>
+              <p key={index}>{index + 1}ª Adição: {item}</p>
             )
           })}
         </div>
@@ -48,7 +48,7 @@ export default function Solo(props) {
           </div>
           {historyTeam2.map((item, index) => {
             return (
-              <p key={index}>{index + 1}ª Rodada: {item}</p>
+              <p key={index}>{index + 1}ª Adição: {item}</p>
             )
           })}
         </div>
@@ -67,7 +67,7 @@ export default function Solo(props) {
           </div>
           {historyTeam3.map((item, index) => {
             return (
-              <p key={index}>{index + 1}ª Rodada: {item}</p>
+              <p key={index}>{index + 1}ª Adição: {item}</p>
             )
           })}
         </div>
