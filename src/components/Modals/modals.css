@@ -4,6 +4,7 @@
   padding: 20px;
   background: var(--bg);
   border: none;
+  overflow-y: scroll;
 }
 
 .Overlay {
@@ -15,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(120, 120, 120, 0.75);
+  background-color: #787878bf;
 }
 
 .game-mode-button {
@@ -69,6 +70,14 @@
   justify-content: space-evenly;
 }
 
+.modal-solo-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .modal-team-info {
   width: 100%;
   height: 100%;
@@ -79,6 +88,26 @@
 }
 
 .modal-team-info input {
+  width: 85%;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-solo-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modal-solo-info input {
   width: 85%;
   height: 30px;
   padding: 12px 20px;

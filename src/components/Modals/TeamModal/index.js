@@ -33,7 +33,8 @@ export default function TeamsModal(props) {
         className="Modal"
         overlayClassName="Overlay"
         contentLabel="Team Startup"
-      ><div className="modal-content">
+      >
+        <div className="modal-content">
           <h1>Criação dos Times</h1>
           <div className="modal-team-input">
             <div className="modal-team-info">

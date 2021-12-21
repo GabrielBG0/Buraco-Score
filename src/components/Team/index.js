@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 export default function Team(props) {
-  const [addTeam1, setAddTeam1] = useState(0)
-  const [addTeam2, setAddTeam2] = useState(0)
+  const [addTeam1, setAddTeam1] = useState('')
+  const [addTeam2, setAddTeam2] = useState('')
   const [scoreTeam1, setScoreTeam1] = useState(0)
   const [scoreTeam2, setScoreTeam2] = useState(0)
   const [historyTeam1, setHistoryTeam1] = useState([])
@@ -18,11 +18,11 @@ export default function Team(props) {
           <h3>{props.teamNames[0]}</h3>
           <p><b>Pontuação: </b> {scoreTeam1}</p>
           <div className='add-points'>
-            <input type="number" value={addTeam1} onChange={(e) => setAddTeam1(e.target.value)} />
+            <input type="number" placeholder="0" value={addTeam1} onChange={(e) => setAddTeam1(e.target.value)} />
             <button onClick={() => {
               setScoreTeam1(parseInt(scoreTeam1) + parseInt(addTeam1))
-              setHistoryTeam1([...historyTeam1, addTeam1])
-              setAddTeam1(0)
+              setHistoryTeam1([...historyTeam1, parseInt(addTeam1)])
+              setAddTeam1('')
             }}>+</button>
           </div>
           {historyTeam1.map((item, index) => {
@@ -35,11 +35,11 @@ export default function Team(props) {
           <h3>{props.teamNames[1]}</h3>
           <p><b>Pontuação: </b> {scoreTeam2}</p>
           <div className='add-points'>
-            <input type="number" value={addTeam2} onChange={(e) => setAddTeam2(e.target.value)} />
+            <input type="number" placeholder="0" value={addTeam2} onChange={(e) => setAddTeam2(e.target.value)} />
             <button onClick={() => {
               setScoreTeam2(parseInt(scoreTeam2) + parseInt(addTeam2))
-              setHistoryTeam2([...historyTeam2, addTeam2])
-              setAddTeam2(0)
+              setHistoryTeam2([...historyTeam2, parseInt(addTeam2)])
+              setAddTeam2('')
             }}>+</button>
           </div>
           {historyTeam2.map((item, index) => {
