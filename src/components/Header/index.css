@@ -1,0 +1,26 @@
+.header {
+  height: var(--nav-size);
+  background-color: var(--bg-nav);
+  padding: 0 1rem;
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: var(--text-color);
+}
+
+.H-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.H-content img {
+  max-width: 25px;
+  height: auto;
+  margin-right: 7px;
+}
