@@ -17,9 +17,8 @@ export default function SoloModal(props) {
   }
 
   return (
-    <button className="game-mode-button" onClick={() => {
-      openModal()
-    }}>
+    {/* Solo desativado enquanto estiver em desenvolvimento */}
+    <button className="game-mode-button" onClick={() => {}}>
       {props.children}
       <Modal
         isOpen={isOpen}
