@@ -15,18 +15,17 @@ export default function SoloModal(props) {
     e.stopPropagation()
     setIsOpen(false)
   }
-
   return (
-    {/* Solo desativado enquanto estiver em desenvolvimento */}
-    <button className="game-mode-button" onClick={() => {}}>
+    < button className="game-mode-button" onClick={() => { openModal() }
+    }>
       {props.children}
-      <Modal
+      < Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
         className="Modal"
         overlayClassName="Overlay"
         contentLabel="Team Startup"
-      ></Modal>
-    </button>
+      ></Modal >
+    </button >
   )
 }
