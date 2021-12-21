@@ -20,8 +20,10 @@ export default function Team(props) {
           <div className='add-points'>
             <input type="number" placeholder="0" value={addTeam1} onChange={(e) => setAddTeam1(e.target.value)} />
             <button onClick={() => {
-              setScoreTeam1(parseInt(scoreTeam1) + parseInt(addTeam1))
-              setHistoryTeam1([...historyTeam1, parseInt(addTeam1)])
+              if (isNaN(parseInt(addTeam1))) {
+                setScoreTeam1(parseInt(scoreTeam1) + parseInt(addTeam1))
+                setHistoryTeam1([...historyTeam1, parseInt(addTeam1)])
+              }
               setAddTeam1('')
             }}>+</button>
           </div>
@@ -37,8 +39,10 @@ export default function Team(props) {
           <div className='add-points'>
             <input type="number" placeholder="0" value={addTeam2} onChange={(e) => setAddTeam2(e.target.value)} />
             <button onClick={() => {
-              setScoreTeam2(parseInt(scoreTeam2) + parseInt(addTeam2))
-              setHistoryTeam2([...historyTeam2, parseInt(addTeam2)])
+              if (isNaN(parseInt(addTeam2))) {
+                setScoreTeam2(parseInt(scoreTeam2) + parseInt(addTeam2))
+                setHistoryTeam2([...historyTeam2, parseInt(addTeam2)])
+              }
               setAddTeam2('')
             }}>+</button>
           </div>
