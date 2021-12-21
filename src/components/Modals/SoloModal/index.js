@@ -16,8 +16,7 @@ export default function SoloModal(props) {
     setIsOpen(false)
   }
   return (
-    < button className="game-mode-button" onClick={() => { openModal() }
-    }>
+    <button className="game-mode-button" onClick={() => { openModal() }}>
       {props.children}
       < Modal
         isOpen={isOpen}
